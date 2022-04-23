@@ -274,9 +274,7 @@ The JSON file returned from the Translation service looks like:<br>
 Specifically, we need to read the first result, then to the collection of translations, the first translation, and then to the text. This is done by the call: translator_response[0]['translations'][0]['text']<br>
 
 ### Create the template to display results
-Let's create the HTML template for the results page.
-
-<br>
+Let us create the HTML template for the results page.<br>
 1. Create a new file in templates by selecting templates in the Explorer tool in Visual Studio Code. Then select New file<br>
 2. Name the file results.html<br>
 3. Add the following HTML to results.html<br>
@@ -314,12 +312,12 @@ Let's create the HTML template for the results page.
 ### Test the page
 1. Use Ctrl-C to stop the Flask application<br>
 2. Execute the command 
-3.  ```
+ ```
   flask run
-6.  ``` 
-7. to restart the service<br>
-8. browse to the URL<br>
-9. Translate some text!<br>
+ ``` 
+3. to restart the service<br>
+4. browse to the URL<br>
+5. Translate some text!<br>
 
 That's All!
 
