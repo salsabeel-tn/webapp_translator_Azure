@@ -311,13 +311,12 @@ Let us create the HTML template for the results page.<br>
 
 ### Test the page
 1. Use Ctrl-C to stop the Flask application<br>
-2. Execute the command 
+2. Execute the following command to restart the service
  ```
   flask run
  ``` 
-3. to restart the service<br>
-4. browse to the URL<br>
-5. Translate some text!<br>
+3. browse to the URL<br>
+4. Translate some text!<br>
 
 That's All!
 
