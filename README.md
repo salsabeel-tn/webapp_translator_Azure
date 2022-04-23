@@ -10,7 +10,7 @@ An Azure account. Learn how to create a free account in Create an [Azure account
 <br>[Python3.6](https://www.python.org/downloads/) or later and VS code installed on your computer. <br> At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.<br>
 [Visual Studio Code](https://code.visualstudio.com/)<br>
 
-## Implementation
+## PART 1
 1. check python version, must be > 3.6:<br>
 ```
 python --version
@@ -40,7 +40,7 @@ python -m venv venv
 # Activate the environment
 source ./venv/bin/activate
 ```
-4.Install Flask and librariesL<br>
+4. Install Flask and libraries<br>
 * from the current terminal, open VS code:<br>
 ```
 code .
@@ -61,3 +61,31 @@ pip install -r requirements.txt
 ```
 The command downloads the necessary libraries and their dependencies.
 
+## PART 2
+
+1. Returning to the instance of Visual Studio Code we were using previously, create a new file named app.py by clicking New file in the Explorer tab.<br>
+2. set the python interpreter by clicking CTRL + shift + P to the following:<br>
+```
+.venv\Scripts\python.exe
+```
+this resolves any dependancies issuies that your local interpreter might have<br>
+
+3.Add the code to create your Flask application<br>
+
+```
+from flask import Flask, redirect, url_for, request, render_template, session
+
+app = Flask(__name__)
+```
+The import statement includes references to Flask, which is the core of any Flask application. The "app" variable will be our core application. We'll use it when we register our routes in the next step.<br>
+
+4. Add the route<br>
+
+```
+@app.route('/', methods=['GET'])
+def index():
+    return render_template('index.html')
+```
+This route is sometimes called either the default or the index route, because it's the one that will be used if the user doesn't provide anything beyond the name of the domain or server.<br>
+
+By using @app.route, we indicate the route we want to create. The path will be /, which is the default route. We indicate this will be used for GET. If a GET request comes in for /, Flask will automatically call the function declared immediately below the decorator, index in our case. In the body of index, we indicate that we'll return an HTML template named index.html to the user.<br>
