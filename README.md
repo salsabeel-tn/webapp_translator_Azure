@@ -308,7 +308,7 @@ Let's create the HTML template for the results page.
 </body>
 </html>
 ```
-
+Next: <br>
 ### Test the page
 1. Use Ctrl-C to stop the Flask application<br>
 2. Execute the command ```flask run``` to restart the service<br>
