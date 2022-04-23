@@ -26,3 +26,38 @@ cd contoso
 mkdir contoso
 cd contoso
 ```
+3. Create a Python virtual environment<br>
+```
+# Windows
+# Create the environment
+python -m venv venv
+# Activate the environment
+.\venv\scripts\activate
+
+# macOS or Linux
+# Create the environment
+python -m venv venv
+# Activate the environment
+source ./venv/bin/activate
+```
+4.Install Flask and librariesL<br>
+* from the current terminal, open VS code:<br>
+```
+code .
+```
+* In Visual Studio Code, in the Explorer window, select New File next to the contoso directory<br>
+
+* Name the file requirements.txt, and add the following text:<br>
+
+```
+flask
+python-dotenv
+requests
+```
+* Save the file by clicking Ctrl-S, or Cmd-S on a Mac<br>
+* Return to the command or terminal window and perform the installation by using pip to run the following command:<br>
+```
+pip install -r requirements.txt
+```
+The command downloads the necessary libraries and their dependencies.
+
