@@ -270,4 +270,51 @@ The JSON file returned from the Translation service looks like:<br>
   }
 ]
 ```
-Specifically, we need to read the first result, then to the collection of translations, the first translation, and then to the text. This is done by the call: translator_response[0]['translations'][0]['text']
+Specifically, we need to read the first result, then to the collection of translations, the first translation, and then to the text. This is done by the call: translator_response[0]['translations'][0]['text']<br>
+
+### Create the template to display results
+Let's create the HTML template for the results page.
+
+<br>
+1. Create a new file in templates by selecting templates in the Explorer tool in Visual Studio Code. Then select New file<br>
+2. Name the file results.html<br>
+3. Add the following HTML to results.html<br>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Result</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Results</h2>
+        <div>
+            <strong>Original text:</strong> {{ original_text }}
+        </div>
+        <div>
+            <strong>Translated text:</strong> {{ translated_text }}
+        </div>
+        <div>
+            <strong>Target language code:</strong> {{ target_language }}
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success" ><a href="{{ url_for('index') }}" style="color:white">Try another one!</a></button>
+        </div>
+    </div>
+</body>
+</html>
+```
+### Test the page
+1. Use Ctrl-C to stop the Flask application<br>
+2. Execute the command ```flask run``` to restart the service<br>
+3. browse to the URL<br>
+4. Translate some text!<br>
+
+That's All!
+
+
+
