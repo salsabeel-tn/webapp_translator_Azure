@@ -240,6 +240,7 @@ def index_post():
         original_text=original_text,
         target_language=target_language
     )
+    
 ```
     
 The code is commented to describe the steps that are being taken. At a high level, here's what our code does:<br>
@@ -307,13 +308,18 @@ Let's create the HTML template for the results page.
     </div>
 </body>
 </html>
+
 ```
-Next: <br>
+
 ### Test the page
 1. Use Ctrl-C to stop the Flask application<br>
-2. Execute the command ```flask run``` to restart the service<br>
-3. browse to the URL<br>
-4. Translate some text!<br>
+2. Execute the command 
+3.  ```
+  flask run
+6.  ``` 
+7. to restart the service<br>
+8. browse to the URL<br>
+9. Translate some text!<br>
 
 That's All!
 
