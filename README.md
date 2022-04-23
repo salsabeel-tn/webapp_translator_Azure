@@ -136,7 +136,7 @@ Jinja, the templating engine for Flask, focuses quite heavily on HTML. As a resu
 ```
 The core components in the HTML above are the textarea for the text the user wishes to translate, and the dropdown list (select), which the user will use to indicate the target language.<br>
 6. Test the application<br>
-* on your terminal, run the following:<br>
+* In your terminal, run the following:<br>
 ```
 # Windows
 set FLASK_ENV=development
@@ -171,3 +171,4 @@ flask run
 9. Select Go to resource<br>
 10. Select Keys and Endpoint on the left side under RESOURCE MANAGEMENT <br>
 11. Next to KEY 1, select Copy to clipboard<br>
+# creating 
