@@ -7,5 +7,10 @@ In this module, you'll build a website using Flask and Cognitive Services to tra
 
 ## Prerequisites
 An Azure account. Learn how to create a free account in Create an [Azure account for students](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-0000-cxa)
-Python 3.6 or later and VS code installed on your computer. Follow the steps in the Install Python 3 module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
-Visual Studio Code
+<br>[Python3.6](https://www.python.org/downloads/) or later and VS code installed on your computer. <br> At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.<br>
+[Visual Studio Code](https://code.visualstudio.com/)<br>
+
+1. check python version, must be > 3.6:<br>
+```
+python --version
+```
