@@ -253,3 +253,21 @@ The code is commented to describe the steps that are being taken. At a high leve
 7. Retrieves the JSON response from the server, which includes the translated text<br>
 8. Retrieves the translated text (see the following note)<br>
 9. Calls render_template to display the response page<br>
+
+The JSON file returned from the Translation service looks like:<br>
+```[
+  {
+    "detectedLanguage": {
+      "language": "en",
+      "score": 1.0
+    },
+    "translations": [
+      {
+        "text": "これはテストです",
+        "to": "ja"
+      }
+    ]
+  }
+]
+```
+Specifically, we need to read the first result, then to the collection of translations, the first translation, and then to the text. This is done by the call: translator_response[0]['translations'][0]['text']
