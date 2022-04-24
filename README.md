@@ -65,7 +65,7 @@ The command downloads the necessary libraries and their dependencies.
 ## PART 2
 
 1. Returning to the instance of Visual Studio Code we were using previously, create a new file named app.py by clicking New file in the Explorer tab.<br>
-2. set the python interpreter by clicking CTRL + shift + P to the following:<br>
+2. set the python interpreter by clicking CTRL + shift + P then Find then navigate to the following:<br>
 ```
 .venv\Scripts\python.exe
 ```
