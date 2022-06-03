@@ -1,4 +1,6 @@
 MLSA workshop, April 24th, 2022
+# session's recording: 🎥
+https://drive.google.com/file/d/12B_0bQG0_1eqc3WEeEMvFWOkIh2RNHof/view?usp=sharing
 # DEMO:
 
 
