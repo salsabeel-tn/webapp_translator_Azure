@@ -1,4 +1,7 @@
 MLSA workshop, April 24th, 2022
+A part of my workshop "Build an AI web translator app with Flask", where I taught students how to build a web app using Azure Cognitive services and Flask <br>
+![image](https://github.com/salsabeel-tn/webapp_translator_Azure/assets/60573989/31a118d3-16cf-4fe6-8410-fa06c3cc3904)
+
 # session's recording: 🎥
 https://drive.google.com/file/d/12B_0bQG0_1eqc3WEeEMvFWOkIh2RNHof/view?usp=sharing
 # DEMO:
